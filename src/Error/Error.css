@@ -1,0 +1,26 @@
+
+
+.Error{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Error h1, h2 {
+    font-size: 300px;
+    color:  rgb(249, 97, 97);
+  }
+  
+
+  .Error h1 {
+    margin: 80px; 
+
+  }
+  .Error h2 {
+    font-size: 30px; 
+  }
+
+  .ErrorLink{
+    margin-top: 80px;
+    text-decoration: underline;
+  }
