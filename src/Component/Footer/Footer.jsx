@@ -1,10 +1,11 @@
 import './Footer.css';
+import logo from '../../assets/Logo.svg';
 
 function Footer(){
 
 return(
     <footer className="footer">
-        <p>Kasa</p>
+        <img src={logo} alt="Logo" className='logo' />
         <p>&copy; {new Date().getFullYear()} Kasa. All rights reserved</p>
     </footer>
 );

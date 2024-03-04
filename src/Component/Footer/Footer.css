@@ -1,0 +1,27 @@
+.footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 150px;
+    width: 100%;
+  }
+
+  @media screen and (max-width: 425px) { 
+    .footer {
+      text-align: center;
+      padding: 50px 0;
+      width: 100%;
+    }
+    .footer p {
+      width: 40%; 
+      margin: 0 auto; 
+      margin-top: 10px;
+    }
+  }
+
+  .logo {
+    width: 80px;
+    height: auto;
+    filter: invert(1) grayscale(1) brightness(2);
+  }

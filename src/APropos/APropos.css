@@ -1,0 +1,25 @@
+.apropos-width{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.apropos-collapse{
+    margin: 0 200px;
+}
+
+
+@media screen and (max-width: 1024px) { 
+    .apropos-collapse{
+        margin: 0 100px;
+    }
+}
+
+@media screen and (max-width: 500px) { 
+    .apropos-collapse{
+        margin: 0 50px;
+    }
+}

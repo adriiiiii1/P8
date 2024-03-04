@@ -1,5 +1,4 @@
 
-
 .Error{
   display: flex;
   flex-direction: column;
@@ -7,20 +6,44 @@
 }
 
 .Error h1, h2 {
+  color:  rgb(249, 97, 97);
+  text-align: center;
+}
+
+.Error h1 {
     font-size: 300px;
-    color:  rgb(249, 97, 97);
-  }
-  
+    margin: 60px; 
+    font-weight: 700;
+}
 
-  .Error h1 {
-    margin: 80px; 
-
-  }
-  .Error h2 {
+.Error h2 {
     font-size: 30px; 
+    font-weight: 500;
   }
 
   .ErrorLink{
-    margin-top: 80px;
+    margin-top: 60px;
+    margin-bottom: 0px;
     text-decoration: underline;
+  }
+
+
+  @media screen and (max-width: 768px) { 
+    .Error h1 {
+      font-size: 200px; 
+    }
+    .Error h2 {
+      font-size: 25px; 
+    }
+  }
+  
+
+  @media screen and (max-width: 500px) { 
+    .Error h1 {
+      font-size: 100px;
+    }
+    .Error h2 {
+      font-size: 20px; 
+    }
+  
   }
