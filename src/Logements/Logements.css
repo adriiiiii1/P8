@@ -105,7 +105,9 @@ justify-content: space-between;
   gap: 30px;
  }
 
-
+ .list-style {
+  list-style-type: none;
+}
 
   @media screen and (max-width: 425px) { 
     .Logements{

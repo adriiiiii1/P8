@@ -4,12 +4,17 @@ import logementsData from '../Data/Logements.json';
 import Collapse from "../Component/Collapse/Collapse.jsx";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
+import Error from '../Error/Error.jsx';
 import './Logements.css';
 
 
 function Logements() {
   const { id } = useParams();
   const apartment = logementsData.find((logement) => logement.id === id);
+
+  if (!apartment) {
+    return <Error />;
+  }
 
   return (
     <div className="Logements">
@@ -47,7 +52,7 @@ function Logements() {
             <p>{apartment.description}</p>
           </Collapse>
           <Collapse title="Équipements">
-            <ul>
+            <ul className='list-style'>
               {apartment.equipments.map((equipment, index) => (
                 <li key={index}>{equipment}</li>
               ))}
